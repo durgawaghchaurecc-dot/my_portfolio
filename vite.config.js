@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
+    base:'/my_portfolio/',
     base: mode === 'production' ? '/my_portfolio/' : '/',
     
   }
