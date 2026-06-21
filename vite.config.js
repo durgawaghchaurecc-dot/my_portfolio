@@ -7,5 +7,6 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     base: mode === 'production' ? '/my_portfolio/' : '/',
+    
   }
 })
